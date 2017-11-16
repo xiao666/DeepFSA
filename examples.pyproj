@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0e9b2400-edb9-45a0-b2aa-f5a247649377}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>attlayer.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="attlayer.py" />
+    <Compile Include="cal_nb_epoch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cal_news.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cal_semeval.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="class_avg_finetuning.py" />
+    <Compile Include="clean_twitter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="create_twitter_vocab.py" />
+    <Compile Include="create_vocab.py" />
+    <Compile Include="custom_metric.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dataset_split.py" />
+    <Compile Include="effect_emoji.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="encode_texts.py" />
+    <Compile Include="example_helper.py" />
+    <Compile Include="filter_input.py" />
+    <Compile Include="filter_utils.py" />
+    <Compile Include="finetune_insults_chain-thaw.py" />
+    <Compile Include="finetune_semeval_class-avg_f1.py" />
+    <Compile Include="finetune_youtube_last.py" />
+    <Compile Include="finetuning.py" />
+    <Compile Include="global_variables.py" />
+    <Compile Include="imdb_from_scratch.py" />
+    <Compile Include="load_custom.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model_def.py" />
+    <Compile Include="normalize_price.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="plot2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="plot3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="plots.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="score_texts_emojis.py" />
+    <Compile Include="SemEval_Chain_Thaw.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SemEval_Full.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SemEval_Last.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SemEval_New.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sem_evaluate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sentence_tokenizer.py" />
+    <Compile Include="sp_lstm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sp_plot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sp_price.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sp_tf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sum_max_25.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="technical.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tokenizer.py" />
+    <Compile Include="tokenize_dataset.py" />
+    <Compile Include="vocab_extension.py" />
+    <Compile Include="word_generator.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
